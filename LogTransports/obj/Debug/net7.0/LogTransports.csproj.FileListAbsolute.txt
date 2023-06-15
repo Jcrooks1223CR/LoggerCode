@@ -1,0 +1,15 @@
+C:\Caesars\LogData\LogTransports\bin\Debug\net7.0\LogTransports.exe
+C:\Caesars\LogData\LogTransports\bin\Debug\net7.0\LogTransports.deps.json
+C:\Caesars\LogData\LogTransports\bin\Debug\net7.0\LogTransports.runtimeconfig.json
+C:\Caesars\LogData\LogTransports\bin\Debug\net7.0\LogTransports.dll
+C:\Caesars\LogData\LogTransports\bin\Debug\net7.0\LogTransports.pdb
+C:\Caesars\LogData\LogTransports\obj\Debug\net7.0\LogTransports.csproj.AssemblyReference.cache
+C:\Caesars\LogData\LogTransports\obj\Debug\net7.0\LogTransports.GeneratedMSBuildEditorConfig.editorconfig
+C:\Caesars\LogData\LogTransports\obj\Debug\net7.0\LogTransports.AssemblyInfoInputs.cache
+C:\Caesars\LogData\LogTransports\obj\Debug\net7.0\LogTransports.AssemblyInfo.cs
+C:\Caesars\LogData\LogTransports\obj\Debug\net7.0\LogTransports.csproj.CoreCompileInputs.cache
+C:\Caesars\LogData\LogTransports\obj\Debug\net7.0\LogTransports.dll
+C:\Caesars\LogData\LogTransports\obj\Debug\net7.0\refint\LogTransports.dll
+C:\Caesars\LogData\LogTransports\obj\Debug\net7.0\LogTransports.pdb
+C:\Caesars\LogData\LogTransports\obj\Debug\net7.0\LogTransports.genruntimeconfig.cache
+C:\Caesars\LogData\LogTransports\obj\Debug\net7.0\ref\LogTransports.dll

@@ -1,0 +1,15 @@
+C:\Caesars\LogData\DataLogFormat\bin\Debug\net7.0\LogDataFormat.exe
+C:\Caesars\LogData\DataLogFormat\bin\Debug\net7.0\LogDataFormat.deps.json
+C:\Caesars\LogData\DataLogFormat\bin\Debug\net7.0\LogDataFormat.runtimeconfig.json
+C:\Caesars\LogData\DataLogFormat\bin\Debug\net7.0\LogDataFormat.dll
+C:\Caesars\LogData\DataLogFormat\bin\Debug\net7.0\LogDataFormat.pdb
+C:\Caesars\LogData\DataLogFormat\obj\Debug\net7.0\LogDataFormat.csproj.AssemblyReference.cache
+C:\Caesars\LogData\DataLogFormat\obj\Debug\net7.0\LogDataFormat.GeneratedMSBuildEditorConfig.editorconfig
+C:\Caesars\LogData\DataLogFormat\obj\Debug\net7.0\LogDataFormat.AssemblyInfoInputs.cache
+C:\Caesars\LogData\DataLogFormat\obj\Debug\net7.0\LogDataFormat.AssemblyInfo.cs
+C:\Caesars\LogData\DataLogFormat\obj\Debug\net7.0\LogDataFormat.csproj.CoreCompileInputs.cache
+C:\Caesars\LogData\DataLogFormat\obj\Debug\net7.0\LogDataFormat.dll
+C:\Caesars\LogData\DataLogFormat\obj\Debug\net7.0\refint\LogDataFormat.dll
+C:\Caesars\LogData\DataLogFormat\obj\Debug\net7.0\LogDataFormat.pdb
+C:\Caesars\LogData\DataLogFormat\obj\Debug\net7.0\LogDataFormat.genruntimeconfig.cache
+C:\Caesars\LogData\DataLogFormat\obj\Debug\net7.0\ref\LogDataFormat.dll

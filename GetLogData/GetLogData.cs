@@ -8,28 +8,13 @@ using System.Reflection.Metadata;
 using System.Reflection.PortableExecutable;
 using System.Xml.Linq;
 using System.Collections.Generic;
+using LoggerCode.Model.LogData
 
 
-
-public class GetLogData
+namespace.LoggerCode.GetLogData
 {
-    public DateTime timeStamp { get; set; }
-    public string host { get; set; }
-    public string source { get; set; }
-    public string correlationId { get; set; }
 
-    public string code { get; set; }
-
-    public string message { get; set; }
-
-    public string http { get; set; }
-
-    public string trace { get; set; }
-
-    public List<string> data { get; set; }
-
-
-    public DateTime GetTimeStamp(DateTime timeStamp)
+    /*public DateTime GetTimeStamp(DateTime timeStamp)
     {
         return timeStamp;
     }
@@ -106,15 +91,92 @@ public class GetLogData
     public void SetData(List<string> data)
     {
         this.data = data;
+    }*/
+
+
+    public class LogSeverity
+    {
+        public static readonly LogSeverity Critical = new LogSeverity(TraceEventType.Critical);
+        public static readonly LogSeverity Error = new LogSeverity(TraceEventType.Error);
+        public static readonly LogSeverity Warning = new LogSeverity(TraceEventType.Warning);
+        public static readonly LogSeverity Information = new LogSeverity(TraceEventType.Information);
+        public static readonly LogSeverity Verbose = new LogSeverity(TraceEventType.Verbose);
+
+        public static LogSeverity LEVEL
+        {
+            get
+            {
+                try
+                {
+                    return Error;
+                }
+                catch (Exception)
+                {
+                    return Error;
+                }
+            }
+        }
+
+        private LogSeverity(TraceEventType traceEventType)
+        {
+            this._traceEventType = traceEventType;
+        }
+
+        private readonly TraceEventType _traceEventType;
+
+        public TraceEventType TraceEventType { get { return this._traceEventType; } }
+
+        public static LogSeverity Parse(string severity)
+        {
+            LogSeverity defaultLoggingLevel = Error;
+
+            if (string.IsNullOrEmpty(severity))
+            {
+                return defaultLoggingLevel;
+            }
+
+            switch (severity.ToLower())
+            {
+                case "critical":
+                    return Critical;
+                case "error":
+                    return Error;
+                case "warning":
+                    return Warning;
+                case "information":
+                    return Information;
+                case "verbose":
+                    return Verbose;
+                default:
+                    return defaultLoggingLevel;
+            }
+        }
+
+        public static bool IsSeverityLogged(LogSeverity severity)
+        {
+            if (severity == null) return false;
+            return severity.TraceEventType <= LEVEL.TraceEventType;
+        }
     }
-}
 
+    private string CreateSeverity(LogEntry log)
+    {
+        string severity = "DEBUG";
 
+        if (log.Severity.TraceEventType == TraceEventType.Information || log.Severity.TraceEventType == TraceEventType.Verbose)
+        {
+            severity = "INFO";
+        }
+        else if (log.Severity.TraceEventType == TraceEventType.Critical || log.Severity.TraceEventType == TraceEventType.Error)
+        {
+            severity = "ERROR";
+        }
+        else if (log.Severity.TraceEventType == TraceEventType.Warning)
+        {
+            severity = "WARNING";
+        }
 
-
-
-
-
-
+        return severity;
+    }
 
 }
